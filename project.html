@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style>
+  
+  
+ ul{
+    float: right;
+    list-style-type: none;
+      margin-top: 40px;
+ 
+    }
+   ul li {
+    display: inline-block;
+    }
+
+ul li a{
+    text-decoration: none;
+    color:black;
+    padding: 5px 20px;
+    border: 2px solid;
+      transition: 0.6s ease;
+}
+ul li a:hover{
+    background-color: black;
+    color:aliceblue;
+}
+ 
+ .logo img{
+    float: left;
+    width: 100px;;
+    height: 10px;
+ }
+
+ .main{
+max-width: 1200px;
+margin: auto;
+ }
+ .product{
+  text-align: center;
+  text-decoration-color: red;
+  margin-top: 60px;
+ }
+ .content{
+    border:2px;
+    background-color: greenyellow;
+    margin-top:50px;
+    box-sizing:10px ;
+    
+  }
+  .footer{
+     margin-top: 10px;
+     width: 100%;
+     padding: 100px 5%;
+     background: #333;
+     color: #efef;
+     display: flex;
+  }
+  .footer div{
+    text-align: center;
+  }
+  .row-cols-2{
+    flex-grow: 3;
+    padding-left: 90px;
+  }
+  .footer div h3{
+    font-weight:300;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+  }
+  .content{
+    padding: top 5px;
+    margin-right: 10px;
+  }
+  .row-cols-3{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    
+  }
+  .example{
+    padding-left: 370px;
+    padding-top: 20px;
+    background-color:rgba(0, 128, 0, 0.616);
+    
+  }
+  .button a:hover {
+    background-color:rgba(0, 166, 255, 0.916);
+    color: blue;
+    
+  }
+ 
+ 
+ 
+ </style>
+    
+</head>
+<body>
+    <header>
+      <div>
+        <form class="example">
+        <input type="text" placeholder="search.." name="search" ">
+        <button type="submit"> submit</button>
+        </form>
+
+
+      </div>
+        <div class="main">
+            <div class="logo"></div>
+            <img src="image/nature.jpj.jpg">
+            <ul>
+            <li><a href="#">Home</a></li>
+            <li><div class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false",background-color="black" >
+                company profil
+              </a>
+            
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">About Us</a></li>
+                <li><a class="dropdown-item" href="#">Processing Unit</a></li>
+                <li><a class="dropdown-item" href="#">Qulity Control</a></li>
+                <li><a class="dropdown-item" href="#">Catalogus</a></li>
+              </ul>
+            </div></a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Branded Ingredient</a></li>
+            <li><a href="#">News& Event</a></li>
+            <li><a href="#">contact Us</a></li></ul>
+        </div>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="image/Banner-2-1-1200x500.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="image/Banner-1-3-1200x500.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="image/Banner-4-1200x500.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="image/Banner-1-3-1200x500.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+    </header>
+    <div class="product">
+      <h1>Our Product</h1>
+      <h4 style="color: red;">Proving High Qulity Product</h4>
+      <div class="row row-cols-1 row-cols-md-3 g-4" style="margin-top:10;">
+        <div class="col">
+          <div class="card h-100">
+            <img src="image/product-1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Herbs</h5>
+               </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="image/product-2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Botanical Powder</h5>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="image/product-3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Spices</h5>
+             
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="image/product-4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Herbal Tea</h5>
+             
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="image/product-5.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Organic Ingredient</h5>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="image/product-6.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Herbal Extracts</h5>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <h5>Want To Know the Best Deals?</h5>
+      
+        <span>Looking for a Quotation?</span>
+        
+      </div>
+      <div>
+        <div class="footer">
+          <div class="row-cols-1">
+            <h3>Head Office</h3>
+            <p></p>jairamdass Khushiram Building, <br> No. 5, Sector 19-C, Vashi,Navi Mumbai-400 703. <br>Maharashtra. India.</p>
+          </div>
+          <div class="row-cols-2">
+            <h3>Write to Us</h3>
+            <h5>enquire@jairamdass.com</h5>
+          </div>
+          <div class="row-cols-3">
+            <h3>Helpline Numbers</h3>
+            <h5>+91-22-27831232 </h5>
+            <h5>+91-22-27838111 </h5>
+          </div>
+        
+
+
+
+
+</html>
+
+
+      
+
+  
+  
+
+</div></body>
+</html>
